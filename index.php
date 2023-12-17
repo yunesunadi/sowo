@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/logo.svg" sizes="any" type="image/svg+xml" />
+    <link rel="icon" href="assets/images/logo.svg" sizes="any" type="image/svg+xml" />
+    <!-- This logo is designed by using icons from "https://icons8.com/icons". -->
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
     <title>SOWO</title>
 </head>
 
@@ -14,7 +15,8 @@
     <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top" id="navbar">
         <div class="container">
             <a class="navbar-brand" href="index.php">
-                <img src="images/logo.png" alt="SOWO logo" height="25">
+                <img src="assets/images/logo.png" alt="SOWO logo" height="25">
+                <!-- This logo is designed by using icons from "https://icons8.com/icons". -->
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-content"
                 aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,11 +46,13 @@
                 <hr class="text-light">
                 <div
                     class="d-flex align-items-center justify-content-around justify-content-sm-between gap-3 mb-2 ms-auto mt-md-2">
-                    <a href="#" class="text-light text-decoration-none">
+                    <a href="#" class="text-light text-decoration-none" id="signup-btn" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">
                         <i class="bi bi-pen"></i>
                         Sign Up
                     </a>
-                    <a href="#" class="text-light text-decoration-none">
+                    <a href="#" class="text-light text-decoration-none" id="login-btn" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">
                         <i class="bi bi-box-arrow-in-right"></i>
                         Login
                     </a>
@@ -60,15 +64,24 @@
         tabindex="0">
         <section id="hero">
             <div class="card position-relative">
-                <img src="images/hero-bg-sm.jpg" class="card-img object-fit-cover d-md-none mt-5" alt="Hero image">
-                <img src="images/hero-bg.jpg" class="card-img object-fit-cover d-none d-md-block" alt="Hero image">
-                <div
-                    class="card-img-overlay text-white d-grid justify-content-center align-content-center text-center z-1 mt-5 mt-md-0">
+                <img src="assets/images/hero-bg-sm.jpg" class="card-img object-fit-cover d-md-none mt-5"
+                    alt="Hero image">
+                <img src="assets/images/hero-bg.jpg" class="card-img object-fit-cover d-none d-md-block"
+                    alt="Hero image">
+                <div class="card-img-overlay text-white d-grid justify-content-center align-content-center text-center mt-5 mt-md-0 z-1"
+                    id="hero-content">
                     <h1 class="card-title display-5">Welcome To SOWO</h1>
                     <p class="card-text lead">Are you ready to try?</p>
-                    <a href="login-signup-form.php"
-                        class="btn btn-light text-primary mx-auto w-50 rounded-pill mt-2 mt-md-3">Get
-                        Started</a>
+                    <button type="button" id="get-started-btn"
+                        class="btn btn-light text-primary mx-auto w-50 rounded-pill mt-2 mt-md-3" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">Get
+                        Started</button>
+                    <?php
+                    include("signup-form.php");
+                    ?>
+                    <?php
+                    include("login-form.php");
+                    ?>
                 </div>
                 <div class="position-absolute top-0 start-0 w-100 h-100 bg-primary opacity-25"></div>
             </div>
@@ -90,7 +103,7 @@
                             Moreover, it calculates how long we need to do exercises to keep our lives healthy.</p>
                     </div>
                     <div class="col-md-6 order-first order-md-last">
-                        <img src="images/about-us-img.jpg" alt="About us image" class="img-fluid">
+                        <img src="assets/images/about-us-img.jpg" alt="About us image" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -111,7 +124,7 @@
                         </p>
                     </div>
                     <div class="col-md-6 order-first">
-                        <img src="images/our-mission.jpg" alt="Our mission image" class="img-fluid">
+                        <img src="assets/images/our-mission.jpg" alt="Our mission image" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -208,8 +221,9 @@
         </section>
         <section id="contact-us">
             <div class="card position-relative">
-                <img src="images/contact-us-sm.jpg" class="card-img object-fit-cover d-sm-none" alt="Contact us image">
-                <img src=" images/contact-us-img.jpg" class="card-img object-fit-cover d-none d-sm-block"
+                <img src="assets/images/contact-us-sm.jpg" class="card-img object-fit-cover d-sm-none"
+                    alt="Contact us image">
+                <img src="assets/images/contact-us-img.jpg" class="card-img object-fit-cover d-none d-sm-block"
                     alt="Contact us image">
                 <div class="card-img-overlay z-1">
                     <div class="container">
@@ -257,8 +271,9 @@
                     <p class="lead-lg text-md-light">Leave your recommendation...</p>
                     <div class="mb-3">
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput">Email address</label>
+                            <input type="email" class="form-control" id="floatingContactEmail"
+                                placeholder="name@example.com">
+                            <label for="floatingContactEmail">Email address</label>
                         </div>
                     </div>
                     <div class="mb-3">
@@ -283,6 +298,7 @@
         </div>
     </footer>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/app.js" type="module"></script>
 </body>
 
 </html>

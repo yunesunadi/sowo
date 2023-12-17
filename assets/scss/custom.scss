@@ -1,9 +1,9 @@
 $primary: #008b9b;
 
-@import "../node_modules/bootstrap/scss/_functions";
-@import "../node_modules/bootstrap/scss/_variables";
-@import "../node_modules/bootstrap/scss/variables-dark";
-@import '../node_modules/bootstrap/scss/bootstrap';
+@import "../../node_modules/bootstrap/scss/_functions";
+@import "../../node_modules/bootstrap/scss/_variables";
+@import "../../node_modules/bootstrap/scss/variables-dark";
+@import '../../node_modules/bootstrap/scss/bootstrap';
 
 .lead {
   @include font-size(.95rem);
