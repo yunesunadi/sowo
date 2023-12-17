@@ -1,15 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/images/logo.svg" sizes="any" type="image/svg+xml" />
-    <!-- This logo is designed by using icons from "https://icons8.com/icons". -->
-    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
-    <title>SOWO</title>
-</head>
+<?php 
+    include("components/head.php");
+    renderHead("SOWO");
+?>
 
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top" id="navbar">
@@ -77,10 +72,10 @@
                         data-bs-target="#signupModal">Get
                         Started</button>
                     <?php
-                    include("signup-form.php");
+                        include("components/signup-form.php");
                     ?>
                     <?php
-                    include("login-form.php");
+                        include("components/login-form.php");
                     ?>
                 </div>
                 <div class="position-absolute top-0 start-0 w-100 h-100 bg-primary opacity-25"></div>
@@ -293,12 +288,12 @@
     <footer>
         <div class="container">
             <p class="text-center pt-3 lead">
-                2023 © All rights reserved by SOWO.
+                <?php echo date("Y"); ?> &copy; All rights reserved by SOWO.
             </p>
         </div>
     </footer>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/app.js" type="module"></script>
+    <script src="assets/js/removeZindex.js"></script>
 </body>
 
 </html>
