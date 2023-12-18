@@ -46,7 +46,7 @@
                                 <img class="rounded-circle object-fit-cover"
                                     src="https://img.icons8.com/dusk/125/000000/meal.png" width="150" height="150">
                                 <?php endif; ?>
-                                <p class="card-title lead mt-2"><?php echo $row['sname'] ?></p>
+                                <p class="card-title lead mt-2 text-dark"><?php echo $row['sname'] ?></p>
                             </div>
                         </a>
                     </div>

@@ -20,7 +20,8 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="my-account.php" class="nav-link text-decoration-none">
+                    <a href="my-account.php"
+                        class="nav-link text-decoration-none <?php echo $page === "my account" ? "active" : "" ?>">
                         <i class="bi bi-person"></i>
                         My Account
                     </a>

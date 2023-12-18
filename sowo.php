@@ -26,7 +26,9 @@
             </nav>
             <div class="d-flex flex-column">
                 <p class="text-center lead-lg">Today's Food List</p>
-                <a href="clear-cart.php" class="btn btn-danger ms-auto">Clear All</a>
+                <a href="clear-cart.php" class="btn btn-danger ms-auto">
+                    <i class="bi bi-x-octagon"></i> Clear All
+                </a>
             </div>
             <div class="row mt-1 g-3">
                 <?php
