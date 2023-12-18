@@ -34,7 +34,8 @@
                 <?php while($row = mysqli_fetch_assoc($sub_result)): ?>
                 <div class="col-sm-6 col-md-4 col-lg-3 g-3">
                     <div class="card">
-                        <a href="item-category.php?id=<?php echo $row['id'] ?>&<?php echo $id; ?>">
+                        <a href="item-category.php?id=<?php echo $row['id'] ?>&<?php echo $id; ?>"
+                            class="text-decoration-none">
                             <div class="card-body text-center">
                                 <?php if(!empty($row['image'])): ?>
                                 <img class="rounded-circle object-fit-cover"

@@ -202,7 +202,7 @@
                         <p class="lead mt-n1">Select food items.</p>
                     </div>
                     <div class="col-sm-6">
-                        <i class="bi bi-cart-plus-fill display-6"></i>
+                        <i class="bi bi-calculator display-6"></i>
                         <h5 class="fw-semibold mt-2 text-uppercase">Do SOWO</h5>
                         <p class="lead mt-n1">Suggest One day WorkOut.</p>
                     </div>
