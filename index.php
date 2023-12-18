@@ -87,7 +87,7 @@
                 <div class="row justify-content-between align-items-center g-3 g-md-5">
                     <div class="col-md-6 order-last order-md-first">
                         <p class="lead"><i class="bi bi-check-square-fill pe-2 text-primary"></i>
-                            SOWO is the acronym of "Suggest One day WorkOut".</p>
+                            SOWO is the acronym of <b>"Suggest One day WorkOut"</b>.</p>
                         <p class="lead"><i class="bi bi-check-square-fill pe-2 text-primary"></i>
                             Its purpose is to help daily lives of Myanmar citizens.
                         </p>

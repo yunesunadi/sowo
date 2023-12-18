@@ -2,23 +2,22 @@ $primary: #008b9b;
 
 @import "../../node_modules/bootstrap/scss/_functions";
 @import "../../node_modules/bootstrap/scss/_variables";
-@import "../../node_modules/bootstrap/scss/variables-dark";
 @import '../../node_modules/bootstrap/scss/bootstrap';
 
 .lead {
-  @include font-size(.95rem);
-  font-weight: $lead-font-weight;
+    @include font-size(.95rem);
+    font-weight: $lead-font-weight;
 
-    @media (min-width: map-get($container-max-widths, "md"))  {
+    @media (min-width: map-get($container-max-widths, "md")) {
         @include font-size(1.15rem);
     }
 }
 
 .lead-lg {
     @include font-size(1.3rem);
-      font-weight: $lead-font-weight;
+    font-weight: $lead-font-weight;
 
-    @media (min-width: map-get($container-max-widths, "md"))  {
+    @media (min-width: map-get($container-max-widths, "md")) {
         @include font-size(1.6rem);
     }
 }
@@ -26,8 +25,8 @@ $primary: #008b9b;
 .nav-fs {
     @include font-size(.9rem);
     font-weight: $lead-font-weight;
-  
-    @media (min-width: map-get($container-max-widths, "md"))  {
+
+    @media (min-width: map-get($container-max-widths, "md")) {
         @include font-size(1rem);
     }
 }

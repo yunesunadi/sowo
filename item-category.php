@@ -1,5 +1,6 @@
 <?php  
     include("confs/user-auth.php");
+    include("confs/config.php");
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +14,8 @@
 <body>
     <?php
         include("components/user-nav.php");
-        include("confs/config.php");  
+        renderNav("home");
+        
         $id = $_GET['id'];
         $sub_result = mysqli_query($conn, "SELECT * FROM subcategories WHERE id=$id");
         $sub_row = mysqli_fetch_assoc($sub_result);   
@@ -46,8 +48,9 @@
                 ?>
                 <div class="col-sm-6 col-md-4 col-lg-3 g-3">
                     <div class="card">
-                        <span class="favorite-btn ms-auto p-3" data-uid="<?php echo $user_id; ?>"
-                            data-iid="<?php echo $item_id; ?>" data-status="<?php echo isset($favorite_row["status"]) && $favorite_row["status"] === "on" ? "on" : "off" ?>">
+                        <span class="favorite-btn ms-auto p-3 pb-0" data-uid="<?php echo $user_id; ?>"
+                            data-iid="<?php echo $item_id; ?>"
+                            data-status="<?php echo isset($favorite_row["status"]) && $favorite_row["status"] === "on" ? "on" : "off" ?>">
                             <?php echo isset($favorite_row["status"]) && $favorite_row["status"] === "on" ? '<i class="bi bi-heart-fill" style="cursor: pointer"></i>' : '<i class="bi bi-heart" style="cursor: pointer"></i>' ?>
                         </span>
                         <div class="card-body text-center">

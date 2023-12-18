@@ -1,5 +1,6 @@
 <?php  
     include("confs/user-auth.php");
+    include("confs/config.php");
 ?>
 
 <!DOCTYPE html>
@@ -13,6 +14,7 @@
 <body>
     <?php
         include("components/user-nav.php");
+        renderNav("home");
     ?>
     <main class="bg-secondary-subtle min-vh-100">
         <div class="container px-3 pt-5 pb-4">
@@ -23,8 +25,7 @@
                 </ol>
             </nav>
             <div class="row">
-                <?php   
-                    include("confs/config.php");
+                <?php
                     $result = mysqli_query($conn, "SELECT * FROM maincategories");
                     while($row = mysqli_fetch_assoc($result)):
                 ?>

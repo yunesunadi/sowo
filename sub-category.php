@@ -1,5 +1,6 @@
 <?php  
     include("confs/user-auth.php");
+    include("confs/config.php");
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +14,8 @@
 <body>
     <?php
         include("components/user-nav.php");
-        include("confs/config.php");  
+        renderNav("home");
+        
         $id = $_GET['id'];
         $sub_result = mysqli_query($conn, "SELECT * FROM subcategories WHERE main_id=$id");
         $main_result = mysqli_query($conn, "SELECT * FROM maincategories WHERE id=$id");
