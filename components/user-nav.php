@@ -33,7 +33,8 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="favorites.php" class="nav-link text-decoration-none">
+                    <a href="favorites.php"
+                        class="nav-link text-decoration-none <?php echo $page === "favorites" ? "active" : "" ?>">
                         <i class="bi bi-heart"></i>
                         Favorites
                     </a>

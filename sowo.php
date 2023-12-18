@@ -51,22 +51,16 @@
                         $row = mysqli_fetch_assoc($result);
                         $total += $row["calorie"] * $qty;
 
-
-
                         $favorite_result = mysqli_query($conn, "SELECT * FROM favorites WHERE uid=$user_id AND iid=$id");
                         $favorite_row = mysqli_fetch_assoc($favorite_result);
                 ?>
                 <div class="col-sm-6 col-md-4 col-lg-3 g-3">
                     <div class="card">
-
-
-                        <span class="favorite-btn ms-auto p-3 pb-0" data-uid="<?php echo $user_id; ?>"
+                        <span class="favorite-btn ms-auto p-3 pb-0 text-primary" data-uid="<?php echo $user_id; ?>"
                             data-iid="<?php echo $id; ?>"
                             data-status="<?php echo isset($favorite_row["status"]) && $favorite_row["status"] === "on" ? "on" : "off" ?>">
                             <?php echo isset($favorite_row["status"]) && $favorite_row["status"] === "on" ? '<i class="bi bi-heart-fill" style="cursor: pointer"></i>' : '<i class="bi bi-heart" style="cursor: pointer"></i>' ?>
                         </span>
-
-
                         <div class="card-body text-center">
                             <?php if(!empty($row["image"])): ?>
                             <img class="rounded-circle object-fit-cover" src="admin/images/<?php echo $row["image"] ?>"
