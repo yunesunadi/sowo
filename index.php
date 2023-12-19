@@ -264,23 +264,25 @@
             <div class="d-md-none p-2 bg-secondary-subtle">
                 <div class="container">
                     <p class="lead-lg text-md-light">Leave your recommendation...</p>
-                    <div class="mb-3">
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingContactEmail"
-                                placeholder="name@example.com">
-                            <label for="floatingContactEmail">Email address</label>
+                    <form action="send-feedback.php" method="post">
+                        <div class="mb-3">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" name="email" id="floatingContactEmail"
+                                    placeholder="name@example.com">
+                                <label for="floatingContactEmail">Email address</label>
+                            </div>
                         </div>
-                    </div>
-                    <div class="mb-3">
-                        <div class="form-floating">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
-                                style="height: 100px"></textarea>
-                            <label for="floatingTextarea">Leave a message...</label>
+                        <div class="mb-3">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
+                                    name="message" style="height: 100px"></textarea>
+                                <label for="floatingTextarea">Leave a message...</label>
+                            </div>
                         </div>
-                    </div>
-                    <div class="mb-3">
-                        <button type="submit" class="btn btn-primary text-light">Send Message</button>
-                    </div>
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-primary text-light">Send Message</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
@@ -294,6 +296,7 @@
     </footer>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/removeZindex.js"></script>
+    <script src="assets/js/collapseNav.js"></script>
 </body>
 
 </html>
