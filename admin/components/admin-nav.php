@@ -2,7 +2,7 @@
 
 <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top" id="navbar">
     <div class="container">
-        <a class="navbar-brand" href="main-category.php">
+        <a class="navbar-brand" href="home.php">
             <img src="../assets/images/logo.png" alt="SOWO logo" height="25">
             <!-- This logo is designed by using icons from "https://icons8.com/icons". -->
         </a>

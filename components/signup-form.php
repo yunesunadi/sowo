@@ -72,9 +72,8 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-floating mb-3">
-                                <input type="email" class="form-control" name="email"
-                                    pattern="/^([a-z 0-9])+\.?([a-z 0-9])+\@([a-z])+\.(com|org|edu)\.?([a-z]+)?$/gi"
-                                    id="floatingEmail" placeholder="name@example.com" required>
+                                <input type="email" class="form-control" name="email" id="floatingEmail"
+                                    placeholder="name@example.com" required>
                                 <label for="floatingEmail">Email address</label>
                             </div>
                             <div class="form-floating mb-3">

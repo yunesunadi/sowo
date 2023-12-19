@@ -8,8 +8,7 @@
                     aria-label="Close"></button>
             </div>
             <div class="modal-body text-start">
-                <form action="signup-update.php?id=<?php echo $row["id"]; ?>" id="edit-profile-form" method="POST"
-                    enctype="multipart/form-data">
+                <form action="signup-update.php" id="edit-profile-form" method="POST" enctype="multipart/form-data">
                     <input type="hidden" name="id" value="<?php echo $row["id"] ?>">
                     <div class="row">
                         <div class="col-md-6">
@@ -77,10 +76,8 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-floating mb-3">
-                                <input type="email" class="form-control" name="email"
-                                    pattern="/^([a-z 0-9])+\.?([a-z 0-9])+\@([a-z])+\.(com|org|edu)\.?([a-z]+)?$/gi"
-                                    id="floatingEmail" placeholder="name@example.com"
-                                    value="<?php echo $row["email"] ?>" required>
+                                <input type="email" class="form-control" name="email" id="floatingEmail"
+                                    placeholder="name@example.com" value="<?php echo $row["email"] ?>" required>
                                 <label for="floatingEmail">Email address</label>
                             </div>
                             <div class="form-floating mb-3">
