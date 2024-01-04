@@ -84,31 +84,36 @@
                             <div class="mb-3">
                                 <label class="form-label">Activity</label>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="activity" id="activity1" checked>
+                                    <input class="form-check-input" type="radio" name="activity" id="activity1"
+                                        value="sedentary" checked>
                                     <label class="form-check-label" for="activity1">
                                         sedentary (little or no exercise)
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="activity" id="activity2">
+                                    <input class="form-check-input" type="radio" name="activity" value="lightly active"
+                                        id="activity2">
                                     <label class="form-check-label" for="activity2">
                                         lightly active (light exercise/sports 1-3 days per week)
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="activity" id="activity3">
+                                    <input class="form-check-input" type="radio" name="activity"
+                                        value="moderately active" id="activity3">
                                     <label class="form-check-label" for="activity3">
                                         moderately active (moderate exercise/sports 3-5 days per week)
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="activity" id="activity4">
+                                    <input class="form-check-input" type="radio" name="activity" value="very active"
+                                        id="activity4">
                                     <label class="form-check-label" for="activity4">
                                         very active (hard exercise/sports 6-7 days per week)
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="activity" id="activity5">
+                                    <input class="form-check-input" type="radio" name="activity" value="extra active"
+                                        id="activity5">
                                     <label class="form-check-label" for="activity5">
                                         extra active (very hard exercise/sports and physical job or 2x training)
                                     </label>
